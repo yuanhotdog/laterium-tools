@@ -30,5 +30,15 @@ We welcome contributions! To contribute, follow these steps:
 ```bash
 $ git clone https://github.com/Yuannnnns/laterium-tools.git
 ```
+
+## Your First Code!
+```pwn
+#include "a_samp"
+
+main ()
+{
+  print "Hello, World!";
+}
+```
 #
 # Enjoy!
