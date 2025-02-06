@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Laterium",
+      "type": "process",
+      "command": "${workspaceFolder}/laterium.cmd",
+      "group": {
+          "kind": "build",
+          "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Task to run the command file"
+    }
+  ]
+}
