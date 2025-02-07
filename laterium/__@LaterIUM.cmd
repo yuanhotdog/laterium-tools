@@ -16,7 +16,7 @@ TITLE %CMDSUSERS%:~
 
 SET "COMMAND_DIR=%~dp0"
 SET "COMMAND_TITLE="
-SET "COMMAND_NAME=laterium.cmd"
+SET "COMMAND_NAME=__@LaterIUM.cmd"
 SET "COMMAND_SERVER=samp-server.exe"
 SET "COMMAND_BUILD=v1-2025"
 
@@ -232,7 +232,7 @@ IF "%LATERIUM_F%"=="%CMDSOPTION% -c" (
         ECHO   "version": "2.0.0",
         ECHO   "tasks": [
         ECHO     {
-        ECHO       "label": "Run Laterium",
+        ECHO       "label": "Run LaterIUM",
         ECHO       "type": "process",
         ECHO       "command": "${workspaceFolder}/%COMMAND_NAME%",
         ECHO       "group": {
@@ -240,7 +240,7 @@ IF "%LATERIUM_F%"=="%CMDSOPTION% -c" (
         ECHO           "isDefault": true
         ECHO       },
         ECHO       "problemMatcher": [],
-        ECHO       "detail": "Task to run the command file"
+        ECHO       "detail": "Task to run the LaterIUM"
         ECHO     }
         ECHO   ]
         ECHO }
@@ -320,7 +320,7 @@ IF "%LATERIUM_F%"=="%CMDSOPTION% -c" (
         IF EXIST "%%F" (
             IF not "%%~xF"==".amx" (
                 ECHO.
-                ECHO # Laterium Pawn file is .. Ok ..
+                ECHO # LaterIUM Pawn file is .. Ok ..
                 ECHO  [A subdirectory or file %%F already exists.]
                 ECHO -
                 TIMEOUT /t 1 >nul
