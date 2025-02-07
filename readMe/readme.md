@@ -21,7 +21,7 @@ If you wish to use these tools on Unix/Linux or macOS, you will need to use Wine
 2. **Configure Wine:** After installation, configure Wine to ensure it runs the tools correctly.
 3. **Run the tools:** Use the following command to run a Windows executable with Wine:
 
-## Your First Code!
+## LaterIUM First Code
 ```pwn
 #include "a_samp"
 
