@@ -1,4 +1,4 @@
-# Laterium Tools
+# LaterIUM Tools
 
 This repository contains various tools for Pawn coding, specifically for Windows terminals. If you want to use these tools in Unix/Linux or macOS environments, you'll need to use WineHQ to run the Windows executables.
 
@@ -8,7 +8,7 @@ This repository contains various tools for Pawn coding, specifically for Windows
 
 0. Download the `.cmd` file. from "laterium".
 1. Place the `.cmd` file in the main directory of your project.
-2. Run the command `$ cat -r` and enter the project name that will be compressed into the Laterium Tools Pawn.
+2. Run the command `$ cat -r` and enter the project name that will be compressed into the LaterIUM Tools Pawn.
 3. All ready, for other commands, please start with `$ cat`
 
 ### Unix Linux/macOS
