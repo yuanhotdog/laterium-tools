@@ -37,7 +37,7 @@ If you wish to use these tools on Unix/Linux or macOS, you will need to use Wine
 - `-v version`: Displays the version of the tool.
 - `-all all options`: Executes all available options in sequence.
 
-## LaterIUM First Code
+## Example LaterIUM
 ```pwn
 #include "a_samp"
 
