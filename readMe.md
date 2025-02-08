@@ -21,6 +21,22 @@ If you wish to use these tools on Unix/Linux or macOS, you will need to use Wine
 2. **Configure Wine:** After installation, configure Wine to ensure it runs the tools correctly.
 3. **Run the tools:** Use the following command to run a Windows executable with Wine:
 
+## Command Options
+
+- `-c compile`: Compiles the project.
+- `-r running`: Runs the project.
+- `-d debugger server`: Starts the debugger server.
+- `-ci compile-running`: Compiles and then runs the project.
+- `-R rename file`: Renames a file.
+- `-C clear screen`: Clears the terminal screen.
+- `-F folder check`: Checks the folder structure.
+- `-V vscode tasks`: Manages VSCode tasks.
+- `-T type file`: Displays the type of a file.
+- `-K kill cmd`: Kills a command.
+- `-D directory`: Changes the directory.
+- `-v version`: Displays the version of the tool.
+- `-all all options`: Executes all available options in sequence.
+
 ## LaterIUM First Code
 ```pwn
 #include "a_samp"
