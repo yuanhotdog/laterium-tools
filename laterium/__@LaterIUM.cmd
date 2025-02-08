@@ -64,8 +64,11 @@ IF "%LATERIUM_F%"=="%CMDSOPTION% -c" (
     TIMEOUT /t 0 >nul
     GOTO SERVERS
 
-) ELSE IF "%LATERIUM_F%"=="%CMDSOPTION% -t" (
+) ELSE IF "%LATERIUM_F%"=="%CMDSOPTION% -d" (
     
+    SET "COMMAND_TITLE=samp server debugger"
+    TITLE %CMDSUSERS%:~/!COMMAND_TITLE!
+
 :TESTSERVERS
     IF EXIST "%COMMAND_DIR%server_log.txt" ( DEL "%COMMAND_DIR%server_log.txt" /q >nul )
     
@@ -397,7 +400,7 @@ IF "%LATERIUM_F%"=="%CMDSOPTION% -c" (
     TITLE %CMDSUSERS%:~/!COMMAND_TITLE!
     
 :_@H
-    ECHO usage: cat [-c compile] [-r running] [-t test server] [-ci compile-running]
+    ECHO usage: cat [-c compile] [-r running] [-d debugger server] [-ci compile-running]
     ECHO       	   [-R rename file] [-C clear screen] [-F folder check] [-V vscode tasks]
     ECHO       	   [-T ^type file] [-K kill cmd] [-D directory] [-v version]
     GOTO COMMAND_TYPEOF
