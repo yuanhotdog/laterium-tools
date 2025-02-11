@@ -27,7 +27,6 @@ This repository contains various tools for Pawn coding, specifically for Windows
 | `-K kill cmd`        | Kills a command.                                |
 | `-D directory`       | Changes the directory.                          |
 | `-v version`         | Displays the version of the tool.               |
-| `-all all options`   | Executes all available options in sequence.     |
 
 ## Example Code
 
