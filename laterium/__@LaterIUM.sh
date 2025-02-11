@@ -12,7 +12,7 @@ echo -ne "\033]0;$CMDSUSERS:~\007"
 COMMAND_DIR="$(dirname "$0")"
 COMMAND_TITLE=""
 COMMAND_NAME="__@LaterIUM.sh"
-COMMAND_SERVER="samp-server.exe"
+COMMAND_SERVER="samp03svr"
 COMMAND_BUILD="v1-2025"
 
 COMPILER_LTIUM=false
@@ -399,28 +399,25 @@ servers() {
         rm "$COMMAND_DIR/server_log.txt" >/dev/null
     fi
 
-    "$COMMAND_SERVER" &
+    chmod +x $COMMAND_SERVER
+    ./$COMMAND_SERVER &
 
     sleep 2
     if ! pgrep -f "$COMMAND_SERVER" >/dev/null; then
-        echo "# $COMMAND_SERVER not found.."
+        echo "# $COMMAND_SERVER not found or failed to start.."
         sleep 2
-        xdg-open "https://sa-mp.app/"
         command_typeof
     fi
 
     if [ $? -ne 0 ]; then
         COMMAND_TITLE="running - failed"
         echo -ne "\033]0;$CMDSUSERS:~/ $COMMAND_TITLE\007"
-
-        echo
         echo -ne "$(colourtext 31 "# Fail")"
         echo
 
         if [ -f "server_log.txt" ]; then
             sleep 2
             cat server_log.txt
-            echo
         else
             echo "# server_log.txt not found."
         fi
@@ -429,8 +426,7 @@ servers() {
         echo
         command_typeof
     else
-        echo
-        echo -ne "$(colourtext 32 "# Succes")"
+        echo -ne "$(colourtext 32 "# Success")"
         echo
 
         sleep 2
