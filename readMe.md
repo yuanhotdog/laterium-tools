@@ -11,16 +11,6 @@ This repository contains various tools for Pawn coding, specifically for Windows
 2. Run the command `$ cat -r` and enter the project name that will be compressed into the LaterIUM Tools Pawn.
 3. All ready, for other commands, please start with `$ cat`
 
-### Unix Linux/macOS
-
-If you wish to use these tools on Unix/Linux or macOS, you will need to use WineHQ. WineHQ allows Windows applications to run on Unix-like operating systems.
-
-#### Steps to run tools using WineHQ
-
-1. **Install WineHQ:** Follow the instructions on the [WineHQ website](https://wiki.winehq.org/Download) to install Wine on your system.
-2. **Configure Wine:** After installation, configure Wine to ensure it runs the tools correctly.
-3. **Run the tools:** Use the following command to run a Windows executable with Wine:
-
 ## Commands Option
 
 | Command Option       | Description                                      |
