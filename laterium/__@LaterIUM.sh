@@ -285,9 +285,9 @@ command_end() {
 }
 
 compilers() {
-    find "$COMMAND_DIR" -type f -name "pawncc.exe" | while read -r COMPILER_PAWNCC; do
-        if [ -f "$COMPILER_PAWNCC" ]; then
-            pawncc
+    find "$COMMAND_DIR" -type f -name "pawncc" | while read -r COMPILER_PAWNCC; do
+        if [ -x "$COMPILER_PAWNCC" ]; then
+            "$COMPILER_PAWNCC"
         fi
     done
 
