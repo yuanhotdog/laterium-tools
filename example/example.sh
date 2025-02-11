@@ -5,7 +5,7 @@ while true; do
 
     BATCHPAWNCC=""
 
-    for file in $(find "$BATCHDIR" -type f -name "pawncc.exe"); do
+    for file in $(find "$BATCHDIR" -type f -name "pawncc"); do
         BATCHPAWNCC="$file"
         break
     done
