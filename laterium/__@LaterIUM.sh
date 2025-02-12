@@ -241,6 +241,7 @@ EOF
             ;;
         "$CMDSOPTION -D")
             ls
+            command_typeof
             ;;
         "$CMDSOPTION -K")
             ./$COMMAND_NAME &
@@ -248,6 +249,7 @@ EOF
             ;;
         "$CMDSOPTION -pwd")
             $(pwd)
+            command_typeof
             ;;
         "help")
             COMMAND_TITLE="help"
@@ -272,7 +274,7 @@ EOF
             ;;
         *)
             echo "'$LATERIUM_F' is not recognized as an internal or external command,"
-            echo "operable program or batch file."
+            echo "operable program or bash file."
             echo
             _h
             command_typeof
