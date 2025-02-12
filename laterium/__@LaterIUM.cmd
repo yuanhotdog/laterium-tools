@@ -394,6 +394,8 @@ IF "%LATERIUM_F%"=="%CMDSOPTION% -c" (
     START %COMMAND_NAME%
     EXIT
 
+) ELSE IF "%LATERIUM_F%"=="%CMDSOPTION% pwd" (
+    ECHO %cd%
 ) ELSE IF "%LATERIUM_F%"=="help" (
 
     SET "COMMAND_TITLE=help"
@@ -402,7 +404,7 @@ IF "%LATERIUM_F%"=="%CMDSOPTION% -c" (
 :_@H
     ECHO usage: cat [-c compile] [-r running] [-d debugger server] [-ci compile-running]
     ECHO       	   [-R rename file] [-C clear screen] [-F folder check] [-V vscode tasks]
-    ECHO       	   [-T ^type file] [-K kill cmd] [-D directory] [-v version]
+    ECHO       	   [-T ^type file] [-K kill cmd] [-D directory] [-v version] [-pwd pwd]
     GOTO COMMAND_TYPEOF
 
 ) ELSE IF "%LATERIUM_F%"=="cat ." (
