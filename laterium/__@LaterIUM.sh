@@ -244,6 +244,7 @@ EOF
             command_typeof
             ;;
         "$CMDSOPTION -K")
+            clear
             command_typeof
             exit
             ;;
