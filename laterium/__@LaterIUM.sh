@@ -244,7 +244,7 @@ EOF
             command_typeof
             ;;
         "$CMDSOPTION -K")
-            ./$COMMAND_NAME &
+            command_typeof
             exit
             ;;
         "$CMDSOPTION -pwd")
