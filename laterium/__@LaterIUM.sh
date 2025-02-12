@@ -246,6 +246,9 @@ EOF
             ./$COMMAND_NAME &
             exit
             ;;
+        "$CMDSOPTION -pwd")
+            $(pwd)
+            ;;
         "help")
             COMMAND_TITLE="help"
             echo -ne "\033]0;$CMDSUSERS:~/ $COMMAND_TITLE\007"
@@ -373,7 +376,7 @@ _r() {
 _h() {
     echo "usage: cat [-c compile] [-r running] [-d debugger server] [-ci compile-running]"
     echo "           [-R rename file] [-C clear screen] [-F folder check] [-V vscode tasks]"
-    echo "           [-T type file] [-K kill cmd] [-D directory] [-v version]"
+    echo "           [-T type file] [-K kill cmd] [-D directory] [-v version] [-pwd pwd]"
     command_typeof
 }
 
