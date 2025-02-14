@@ -11,7 +11,7 @@ echo -ne "\033]0;$CMDSUSERS:~\007"
 
 COMMAND_DIR="$(dirname "$0")"
 COMMAND_TITLE=""
-COMMAND_NAME="__@LaterIUM.sh"
+COMMAND_NAME="LaterIUM.sh"
 COMMAND_SERVER="samp03svr"
 COMMAND_BUILD="v1-2025"
 
