@@ -394,7 +394,7 @@ IF "%LATERIUM_F%"=="%CMDSOPTION% -c" (
     START %COMMAND_NAME%
     EXIT
 
-) ELSE IF "%LATERIUM_F%"=="%CMDSOPTION% pwd" (
+) ELSE IF "%LATERIUM_F%"=="%CMDSOPTION% -pwd" (
     ECHO %cd%
 ) ELSE IF "%LATERIUM_F%"=="help" (
 
