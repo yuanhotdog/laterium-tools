@@ -48,6 +48,3 @@ We welcome contributions! To contribute, follow these steps:
 ```bash
 $ git clone https://github.com/hothots/laterium-tool.git
 ```
-
-#
-# Enjoy!
