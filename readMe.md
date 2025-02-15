@@ -1,4 +1,4 @@
-# [LaterIUM Tools](https://raw.githubusercontent.com/yuanhotdog/laterium-tools/refs/heads/main/laterium/__%40LaterIUM.cmd)
+# [LaterIUM Tools](https://raw.githubusercontent.com/hothots/laterium-tool/refs/heads/main/laterium/LaterIUM.cmd)
 
 This repository contains various tools for Pawn coding, specifically for Windows terminals. If you want to use these tools in Unix/Linux or macOS environments, you'll need to use WineHQ to run the Windows executables.
 
